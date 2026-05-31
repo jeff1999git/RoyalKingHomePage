@@ -1,10 +1,10 @@
-import { Check } from 'lucide-react'
+import { Droplets, ShieldCheck, PackageCheck, Users } from 'lucide-react'
 
 const features = [
-  'Pure & Safe',
-  'Trusted Quality',
-  'On Time Delivery',
-  'All Occasions',
+  { icon: <Droplets    size={22} />, line1: 'PURE',     line2: '& SAFE'     },
+  { icon: <ShieldCheck size={22} />, line1: 'TRUSTED',  line2: 'QUALITY'    },
+  { icon: <PackageCheck size={22}/>, line1: 'ON TIME',  line2: 'DELIVERY'   },
+  { icon: <Users       size={22} />, line1: 'FOR ALL',  line2: 'OCCASIONS'  },
 ]
 
 export default function AboutCard() {
@@ -23,15 +23,22 @@ export default function AboutCard() {
         homes, offices, functions and events across Thrissur, Kerala.
       </p>
 
-      <div className="flex flex-wrap gap-2 px-5 pb-5">
-        {features.map((feature) => (
-          <span
-            key={feature}
-            className="flex items-center gap-1.5 rounded-full bg-royal-blue/[0.08] px-3 py-1.5 text-xs font-medium text-royal-blue"
+      {/* Horizontal feature strip */}
+      <div className="flex border-t border-border-light">
+        {features.map((f, idx) => (
+          <div
+            key={f.line1}
+            className={`flex flex-1 flex-col items-center gap-2 py-4 ${
+              idx < features.length - 1 ? 'border-r border-border-light' : ''
+            }`}
           >
-            <Check size={12} aria-hidden="true" />
-            {feature}
-          </span>
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-royal-blue text-white">
+              {f.icon}
+            </span>
+            <span className="text-center text-[10px] font-bold leading-tight tracking-wide text-deep-navy">
+              {f.line1}<br />{f.line2}
+            </span>
+          </div>
         ))}
       </div>
     </div>
