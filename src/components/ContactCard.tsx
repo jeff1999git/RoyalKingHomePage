@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, MapPin, ChevronRight } from 'lucide-react'
+import { Phone, MessageCircle, MapPin, Mail, ChevronRight } from 'lucide-react'
 
 const MAPS_URL = 'https://maps.google.com/?q=Thrissur,Kerala,India'
 const WA_URL = 'https://wa.me/917306067616'
