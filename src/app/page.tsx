@@ -12,7 +12,7 @@ export default function Page() {
   useScrollReveal()
 
   return (
-    <div className="min-h-screen bg-sky-100">
+    <div className="min-h-screen bg-[#dff4ff]">
       {/* Full-viewport bubble layer */}
       <BubbleBackground />
 
