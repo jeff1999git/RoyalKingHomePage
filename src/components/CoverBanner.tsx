@@ -18,7 +18,7 @@ export default function CoverBanner() {
         <span className="rounded-full bg-royal-blue/10 px-3 py-1 text-xs font-medium text-royal-blue">
           Water Supply
         </span>
-        <p className="text-xs text-[#94A3B8]">Pure Water, Pure Life</p>
+        <p className="text-xs text-black">Pure Water, Pure Life</p>
       </div>
 
       {/* Right: water can */}

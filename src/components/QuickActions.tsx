@@ -40,14 +40,14 @@ function ActionButton({ href, bgClass = '', bgStyle, icon, label, external }: Ac
       >
         {icon}
       </span>
-      <span className="text-xs text-[#94A3B8]">{label}</span>
+      <span className="text-xs text-black">{label}</span>
     </a>
   )
 }
 
 export default function QuickActions() {
   return (
-    <div className="flex flex-row items-center justify-center gap-10 border-b border-border-light bg-white px-6 py-4">
+    <div className="flex flex-row items-center justify-center gap-10 border-b border-royal-blue/20 bg-white/10 px-6 py-4 backdrop-blur-sm">
       <ActionButton
         href="tel:7306067616"
         bgClass="bg-royal-blue"

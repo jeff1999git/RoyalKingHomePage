@@ -12,11 +12,11 @@ export default function AboutCard() {
     <div
       className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-royal-blue/40 bg-white/10 shadow-card backdrop-blur-sm"
     >
-      <p className="px-5 pb-2 pt-4 text-xs font-semibold uppercase tracking-widest text-[#94A3B8]">
+      <p className="px-5 pb-2 pt-4 text-xs font-semibold uppercase tracking-widest text-black">
         About Us
       </p>
 
-      <p className="px-5 pb-4 text-sm leading-relaxed text-[#4A5568]">
+      <p className="px-5 pb-4 text-sm leading-relaxed text-black">
         Royal King provides safe, hygienic and reliable drinking water for
         homes, offices, functions and events across Thrissur, Kerala.
       </p>

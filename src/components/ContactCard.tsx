@@ -50,10 +50,10 @@ function ContactRow({
 
       <span className="min-w-0 flex-1">
         <span className="block text-sm font-semibold text-deep-navy">{primary}</span>
-        <span className="block text-xs text-[#94A3B8]">{secondary}</span>
+        <span className="block text-xs text-black">{secondary}</span>
       </span>
 
-      <ChevronRight size={16} className="shrink-0 text-[#94A3B8]" aria-hidden="true" />
+      <ChevronRight size={16} className="shrink-0 text-black" aria-hidden="true" />
     </a>
   )
 }
@@ -61,7 +61,7 @@ function ContactRow({
 export default function ContactCard() {
   return (
     <div className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-royal-blue/40 bg-white/10 shadow-card backdrop-blur-sm">
-      <p className="px-5 pb-2 pt-4 text-xs font-semibold uppercase tracking-widest text-[#94A3B8]">
+      <p className="px-5 pb-2 pt-4 text-xs font-semibold uppercase tracking-widest text-black">
         Contact Us
       </p>
 
