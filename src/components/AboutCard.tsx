@@ -10,7 +10,7 @@ const features = [
 export default function AboutCard() {
   return (
     <div
-      className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-border-light bg-white shadow-card"
+      className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-royal-blue/40 bg-white/10 shadow-card backdrop-blur-sm"
     >
       <p className="px-5 pb-2 pt-4 text-xs font-semibold uppercase tracking-widest text-[#94A3B8]">
         About Us
@@ -22,12 +22,12 @@ export default function AboutCard() {
       </p>
 
       {/* Horizontal feature strip */}
-      <div className="flex border-t border-border-light">
+      <div className="flex border-t border-royal-blue/20">
         {features.map((f, idx) => (
           <div
             key={f.line1}
             className={`flex flex-1 flex-col items-center gap-2 py-4 ${
-              idx < features.length - 1 ? 'border-r border-border-light' : ''
+              idx < features.length - 1 ? 'border-r border-royal-blue/20' : ''
             }`}
           >
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-royal-blue text-white">

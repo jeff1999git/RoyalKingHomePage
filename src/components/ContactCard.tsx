@@ -38,7 +38,7 @@ function ContactRow({
       href={href}
       target={external ? '_blank' : undefined}
       rel={external ? 'noopener noreferrer' : undefined}
-      className="tap-target flex items-center gap-3 border-b border-border-light px-5 py-3 last:border-b-0"
+      className="tap-target flex items-center gap-3 border-b border-royal-blue/20 px-5 py-3 last:border-b-0"
       aria-label={`${primary} — ${secondary}`}
     >
       <span
@@ -60,7 +60,7 @@ function ContactRow({
 
 export default function ContactCard() {
   return (
-    <div className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-border-light bg-white shadow-card">
+    <div className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-royal-blue/40 bg-white/10 shadow-card backdrop-blur-sm">
       <p className="px-5 pb-2 pt-4 text-xs font-semibold uppercase tracking-widest text-[#94A3B8]">
         Contact Us
       </p>
