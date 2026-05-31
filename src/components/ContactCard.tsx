@@ -103,6 +103,15 @@ export default function ContactCard() {
         secondary="Follow on Instagram"
         external
       />
+
+      <ContactRow
+        href="mailto:royalkingwatersupply@gmail.com"
+        iconBg="bg-red-50"
+        iconColor="text-red-500"
+        icon={<Mail size={17} />}
+        primary="royalkingwatersupply@gmail.com"
+        secondary="Send an email"
+      />
     </div>
   )
 }
