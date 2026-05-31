@@ -2,14 +2,33 @@ import Image from 'next/image'
 
 export default function CoverBanner() {
   return (
-    <div className="flex w-full items-end justify-center bg-white pt-6" style={{ height: 180 }}>
-      <div className="relative" style={{ width: 120, height: 170 }}>
+    <div className="flex w-full items-center justify-center gap-4 bg-white px-6 py-6">
+      {/* Left: logo + badge + tagline */}
+      <div className="flex flex-col items-start gap-2">
+        <div className="relative" style={{ width: 160, height: 72 }}>
+          <Image
+            src="/logo.avif"
+            alt="Royal King"
+            fill
+            sizes="160px"
+            className="object-contain object-left"
+            priority
+          />
+        </div>
+        <span className="rounded-full bg-royal-blue/10 px-3 py-1 text-xs font-medium text-royal-blue">
+          Water Supply
+        </span>
+        <p className="text-xs text-[#94A3B8]">Pure Water, Pure Life</p>
+      </div>
+
+      {/* Right: water can */}
+      <div className="relative shrink-0" style={{ width: 130, height: 180 }}>
         <Image
           src="/water-can.avif"
           alt="Royal King branded 20L water can"
           fill
-          sizes="120px"
-          className="object-contain object-bottom drop-shadow-md"
+          sizes="130px"
+          className="object-contain drop-shadow-md"
           priority
         />
       </div>

@@ -1,7 +1,6 @@
 'use client'
 
 import CoverBanner from '@/components/CoverBanner'
-import ProfileHeader from '@/components/ProfileHeader'
 import QuickActions from '@/components/QuickActions'
 import ContactCard from '@/components/ContactCard'
 import AboutCard from '@/components/AboutCard'
@@ -21,7 +20,6 @@ export default function Page() {
         {/* z-10 ensures all content sits above the bubble layer */}
         <div className="relative z-10">
           <CoverBanner />
-          <ProfileHeader />
           <QuickActions />
 
           <div className="pb-24 pt-3">
