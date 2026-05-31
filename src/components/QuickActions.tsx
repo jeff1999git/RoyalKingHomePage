@@ -1,7 +1,7 @@
 import { Phone, MessageCircle, MapPin } from 'lucide-react'
 import type { CSSProperties } from 'react'
 
-const MAPS_URL = 'https://maps.google.com/?q=Thrissur,Kerala,India'
+const MAPS_URL = 'https://maps.app.goo.gl/Jp7GUyAE5WmsqwUSA'
 const WA_URL = 'https://wa.me/917306067616'
 const IG_URL = 'https://www.instagram.com/royalking_water?igsh=MWdzZTJ1cTZ6YXV5aQ=='
 
