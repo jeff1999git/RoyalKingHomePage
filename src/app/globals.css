@@ -107,3 +107,9 @@ dialog[open] {
   0%, 100% { transform: translateY(0px); }
   50%       { transform: translateY(-8px); }
 }
+
+/* ── Water wave animation ───────────────────────────── */
+@keyframes wave-move {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

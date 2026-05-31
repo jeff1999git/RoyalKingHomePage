@@ -1,24 +1,22 @@
-import { Droplets } from 'lucide-react'
+import Image from 'next/image'
 
 export default function ProfileHeader() {
   return (
-    <div className="flex flex-col items-center pb-5">
-      {/* Logo circle — overlaps banner by 44px */}
-      <div
-        className="flex h-[88px] w-[88px] items-center justify-center rounded-full border-[3px] border-white bg-white shadow-lg"
-        style={{ marginTop: '-44px' }}
-        aria-label="Royal King logo"
-      >
-        <Droplets size={40} className="text-royal-blue" aria-hidden="true" />
+    <div className="flex flex-col items-center pb-5 pt-4">
+      {/* Brand logo in place of text name */}
+      <div className="relative h-16 w-48">
+        <Image
+          src="/logo.avif"
+          alt="Royal King"
+          fill
+          className="object-contain"
+          priority
+          sizes="192px"
+        />
       </div>
 
-      {/* Business name */}
-      <h1 className="mt-3 text-2xl font-bold tracking-tight text-deep-navy">
-        Royal King
-      </h1>
-
       {/* Category badge */}
-      <span className="mt-1 rounded-full bg-royal-blue/10 px-3 py-1 text-xs font-medium text-royal-blue">
+      <span className="mt-2 rounded-full bg-royal-blue/10 px-3 py-1 text-xs font-medium text-royal-blue">
         Water Supply
       </span>
 
