@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-page-bg">
       {/* Card column: full-width on mobile, 430px centered on desktop */}
-      <div className="relative mx-auto min-h-screen w-full max-w-[430px] bg-white">
+      <div className="relative mx-auto min-h-screen w-full max-w-[430px] bg-sky-100">
         <BubbleBackground />
 
         {/* z-10 ensures all content sits above the bubble layer */}
