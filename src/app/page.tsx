@@ -12,20 +12,18 @@ export default function Page() {
   useScrollReveal()
 
   return (
-    <div className="min-h-screen bg-page-bg">
+    <div className="min-h-screen bg-sky-100">
+      {/* Full-viewport bubble layer */}
+      <BubbleBackground />
+
       {/* Card column: full-width on mobile, 430px centered on desktop */}
-      <div className="relative mx-auto min-h-screen w-full max-w-[430px] overflow-hidden bg-sky-100">
-        <BubbleBackground />
+      <div className="relative z-10 mx-auto min-h-screen w-full max-w-[430px]">
+        <CoverBanner />
+        <QuickActions />
 
-        {/* z-10 ensures all content sits above the bubble layer */}
-        <div className="relative z-10">
-          <CoverBanner />
-          <QuickActions />
-
-          <div className="pb-24 pt-3">
-            <ContactCard />
-            <AboutCard />
-          </div>
+        <div className="pb-24 pt-3">
+          <ContactCard />
+          <AboutCard />
         </div>
 
         <BottomBar />

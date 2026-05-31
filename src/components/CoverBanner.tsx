@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function CoverBanner() {
   return (
-    <div className="flex w-full items-center justify-center gap-4 bg-sky-100 px-6 py-6">
+    <div className="flex w-full items-center justify-center gap-4 bg-transparent px-6 py-6">
       {/* Left: logo + badge + tagline */}
       <div className="flex flex-col items-start gap-2">
         <div className="relative" style={{ width: 160, height: 72 }}>
