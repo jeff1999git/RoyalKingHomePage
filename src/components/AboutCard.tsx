@@ -10,8 +10,6 @@ const features = [
 export default function AboutCard() {
   return (
     <div
-      data-reveal
-      data-reveal-delay="1"
       className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-border-light bg-white shadow-card"
     >
       <p className="px-5 pb-2 pt-4 text-xs font-semibold uppercase tracking-widest text-[#94A3B8]">
