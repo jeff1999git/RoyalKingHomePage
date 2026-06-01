@@ -3,6 +3,7 @@
 import CoverBanner from '@/components/CoverBanner'
 import QuickActions from '@/components/QuickActions'
 import ContactCard from '@/components/ContactCard'
+import BulkOrderCard from '@/components/BulkOrderCard'
 import AboutCard from '@/components/AboutCard'
 import BottomBar from '@/components/BottomBar'
 import BubbleBackground from '@/components/BubbleBackground'
@@ -23,6 +24,7 @@ export default function Page() {
 
         <div className="pb-24 pt-3">
           <ContactCard />
+          <BulkOrderCard />
           <AboutCard />
         </div>
 
