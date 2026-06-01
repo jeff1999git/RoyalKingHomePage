@@ -60,13 +60,13 @@ function ContactRow({
 
 export default function ContactCard() {
   return (
-    <div className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-royal-blue/40 bg-white/10 shadow-card backdrop-blur-sm">
+    <div data-reveal className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-royal-blue/40 bg-white/10 shadow-card backdrop-blur-sm">
       <p className="px-5 pb-2 pt-4 text-xs font-semibold uppercase tracking-widest text-black">
         Contact Us
       </p>
 
       <ContactRow
-        href="tel:7306067616"
+        href="tel:+917306067616"
         iconBg="bg-royal-blue/10"
         iconColor="text-royal-blue"
         icon={<Phone size={17} />}

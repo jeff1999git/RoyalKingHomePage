@@ -30,6 +30,7 @@ export default function BubbleBackground() {
             background: `radial-gradient(circle at 30% 30%, rgba(255,255,255,0.95), rgba(0,180,216,0.4))`,
             border: '1px solid rgba(0,180,216,0.65)',
             animation: `${b.anim} ${b.duration}s ease-in ${b.delay}s infinite`,
+            willChange: 'transform',
           }}
         />
       ))}
