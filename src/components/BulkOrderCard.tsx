@@ -20,24 +20,36 @@ export default function BulkOrderCard() {
     setStatus('sending')
     setErrorMsg('')
 
+    const controller = new AbortController()
+    const timer = setTimeout(() => controller.abort(), 15000)
+
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
+        signal: controller.signal,
       })
+      clearTimeout(timer)
       const data = await res.json()
       if (!res.ok) throw new Error(data.error || 'Something went wrong.')
       setStatus('success')
       setForm({ name: '', email: '', phone: '', message: '' })
     } catch (err: unknown) {
-      setErrorMsg(err instanceof Error ? err.message : 'Failed to send.')
+      clearTimeout(timer)
+      const msg =
+        err instanceof Error
+          ? err.name === 'AbortError'
+            ? 'Request timed out. Please try again.'
+            : err.message
+          : 'Failed to send.'
+      setErrorMsg(msg)
       setStatus('error')
     }
   }
 
   return (
-    <div className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-royal-blue/40 bg-white/10 shadow-card backdrop-blur-sm">
+    <div data-reveal className="card-hover mx-4 mb-3 overflow-hidden rounded-2xl border border-royal-blue/40 bg-white/10 shadow-card backdrop-blur-sm">
       {/* Header — always visible */}
       <button
         type="button"

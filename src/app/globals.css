@@ -102,18 +102,6 @@ dialog[open] {
   animation: glow-pulse 2.5s ease-in-out infinite;
 }
 
-/* ── Float animation ────────────────────────────────── */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-8px); }
-}
-
-/* ── Water wave animation ───────────────────────────── */
-@keyframes wave-move {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
 /* ── Carbonation bubble rise — 4 natural sway paths ── */
 @keyframes bubble-rise-a {
   0%   { transform: translateY(0)      translateX(0);    opacity: 0;   }

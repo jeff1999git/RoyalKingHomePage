@@ -49,7 +49,7 @@ export default function QuickActions() {
   return (
     <div className="flex flex-row items-center justify-center gap-10 border-b border-royal-blue/20 bg-white/10 px-6 py-4 backdrop-blur-sm">
       <ActionButton
-        href="tel:7306067616"
+        href="tel:+917306067616"
         bgClass="bg-royal-blue"
         icon={<Phone size={22} />}
         label="Call Now"
